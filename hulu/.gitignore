@@ -33,3 +33,14 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# lock
+*.lock
+
+# lint
+.eslintrc.json
+
+# IDE
+.vscode
+
+
