@@ -10,7 +10,7 @@ function Banner() {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchNetflixOriginals)
-            console.log(request.data)
+            
             setMovie(
                 request.data.results[
                     Math.floor(Math.random() * request.data.results.length - 1)
@@ -20,7 +20,7 @@ function Banner() {
         }
 
         fetchData();
-    }, [])
+    }, []) // useEffect not dependent on a prop, no dependency
 
     function truncate(string, n) {
         return string?.length > n ? string.substr(0, n - 1) + '...' : string        
