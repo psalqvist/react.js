@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import { findAllInRenderedTree } from 'react-dom/test-utils';
 import { auth } from '../firebase';
 import './SignUpScreen.css'
 
